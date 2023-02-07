@@ -1,5 +1,5 @@
 # Algoritimo Binary Search
-
+# OK
 def binary(arraye,indice)
 
 cont = 0.to_i
