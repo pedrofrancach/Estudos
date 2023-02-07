@@ -1,37 +1,42 @@
 # Algorítimo bubbleSort
+
 def bubble(arraye)
 
 cont = 0.to_i
 tamanho = arraye.length
 tamanho = tamanho + 1
-ver = 0.to_i
-ver2 = 0.to_i
+ver = 0
+ver2 = 0
 arrayi = []
-posi1 = 0.to_i
-posi2 = 0.to_i
+posi1 = 0
+posi2 = 0
 
 
-    while cont < tamanho do
+    while cont <= tamanho do
     
-        posi1 = arraye[cont] 
-        posi2 = arraye[cont + 1]
+        #posia = arraye[cont] 
+        #posib = arraye[cont + 1]
 
-        if posi1 == posi2 
+        if arraye[cont] < arraye[cont + 1]
+        end  
+       # if arraye[cont] < 3 #arraye[cont + 1]  
+         #puts "Entrou"
+         #    ver = arraye[cont]
+         #    arrayi[cont] = ver    
+ 
+         #else
         
-            ver = arraye[cont]
-            arrayi[cont] = ver    
-
-        else
-        
-            ver2 = cont + 1
-            ver = arraye[ver2]
-         #   arrayi[cont] << var
+         #  ver2 = cont + 1
+         #  ver  = arraye[ver2]
+         #  arrayi[cont] = ver
   
-        end    
+ #       end    
 
         cont = cont + 1 
 
     end
+puts 
+
 end
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 
