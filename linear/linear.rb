@@ -4,7 +4,7 @@ def busca(arraye,indice)
 cont = 0.to_i
 tamanho = arraye.length
 ver = true
-
+ 
 while cont < tamanho do
     
     ver = true
@@ -12,7 +12,7 @@ while cont < tamanho do
     if arraye[cont] == indice
     
        puts "O índice procurado encontra-se na posição #{cont}"
-
+       break
     else   
          
         ver = false 
