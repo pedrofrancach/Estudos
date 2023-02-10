@@ -3,27 +3,35 @@
 def bubble(arraye)
 
 arrayi = []
-cont = 0 
+cont = 0.to_i 
 tamanho = arraye.length
-tamanho = tamanho - 1
-
-
+tamanho = 2
+var = 0
+puts arraye[cont + 1]
+puts "#######"
 while cont < tamanho do 
- 
-    if arraye[cont] < arraye[cont + 1]
+ puts cont
 
-        arrayi[cont] = arraye[cont]
+  
+    if arraye[cont] < arraye[cont + 1]
+       puts "é isso aqui1 #{arraye[cont]}" 
+       var = arraye[cont]
+       puts "abcde #{var}"      
+       arrayi[cont] = var
 
     else
-
-        arrayi[cont] = arraye[cont + 1]
+       puts "é isso aqui2 #{arraye[cont + 1]}"
+       var = arraye[cont + 1]
+       puts "mnopq #{var}"
+       arrayi[cont] = var
 
     end
-
+  
+       
     cont = cont + 1
 
 end 
-puts arraye
+#puts arraye
 puts "##############"
 puts arrayi
 
