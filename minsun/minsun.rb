@@ -7,42 +7,35 @@ cont = 0.to_i
 tamanho = arraye.length 
 vara = 0.to_i
 varb = 0.to_i
+#tamanho = tamanho - 2
 
-
-while cont == tamanho do
+ 
+while cont < tamanho do
     
-    vara = arraye[cont]
-    varb = arraye[cont + 1]
-
-    if vara < varb
-
-        arrayi << vara
+   break if cont >= tamanho 
     
-    else
+        if arraye[cont] <= arraye[cont + 1]
+
+            arrayi << arraye[cont]
+    
+        else
        
-        arrayi << varb
+            arrayi << arraye[cont + 1]
 
-    end
+        end
 
-
+    #end
     cont = cont +2 
 
 end
 
-tamanho = arrayi.length
-cont = 0.to_i
-soma = 0.to_i
-vara = 0.to_i
-varb = 0.to_i
+#while cont <= tamanho
 
-while cont == tamanho
 
-    vara = arrayi[cont] 
-    soma = vara + soma
-    cont = cont + 1
+#end
 
+puts arrayi 
 end
-
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#**#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 
 

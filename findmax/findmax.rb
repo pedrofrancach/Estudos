@@ -72,20 +72,25 @@ veri = 0.to_i
 
     end
     
-    if soma3 == 0 or soma2 == 0 or soma == 0
+
+    while 
+
+        if soma3 == 0 or soma2 == 0 or soma == 0
     
-        veri = 1
+            veri = 1
 
-    end
+        end
 
-    if soma == soma2 && soma2 == soma3
+        if soma == soma2 && soma2 == soma3
 
         puts "Deu certo!"
         
     end
-
+ 
 
 end
+
+
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 
 lista1 = [3,2,1,1,1]
