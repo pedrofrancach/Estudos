@@ -1,4 +1,5 @@
 # Algoritimo de busca simples
+# OK
 def busca(arraye,indice)
     
 cont = 0.to_i
