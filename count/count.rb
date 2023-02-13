@@ -3,22 +3,34 @@ def count (arraye)
 arrayi = []    
 cont = 0.to_i
 tamanho = arraye.length
-posi = 0.to_i
-var = 0.to_i
+posi = 0
+var = 0
+
 
 while cont < tamanho do
      
    posi = arraye[cont]
-   var = var + 1
-   var = arrayi[posi]
+   var = arrayi[posi]    
    
-   arrayi[posi] = var 
+   if var == nil
+      
+      var = 1
+      var = var + 1
+      var = var - 1
+   
+   else
+
+      var =  var + 1
+
+   end
+   
+   arrayi[posi] = var
 
    cont = cont + 1
 
 end
 
-#puts arrayi
+puts arrayi
 
 end
 
