@@ -72,21 +72,46 @@ veri = 0.to_i
 
     end
     
-
-    while 
-
         if soma3 == 0 or soma2 == 0 or soma == 0
     
             veri = 1
 
         end
-
+    
+     tam1 = tam1 - 1
+     tam2 = tam2 - 1
+     tam3 = tam3 - 1
+  
+     while
         if soma == soma2 && soma2 == soma3
 
-        puts "Deu certo!"
+            puts "Deu certo!"
+               break 
+        else
         
-    end
- 
+            if soma >= soma2 && soma >= soma3
+                
+                soma = soma - arraye1[tam1]
+                tam1 = tam1 - 1 
+
+            elsif soma2 >= soma && soma2 >= soma3
+
+                soma2 = soma2 - arraye2[tam2]
+                tam2 = tam2 - 1
+
+            elsif soma3 >= soma2 && soma3 >= soma
+                
+                soma3 = soma3 - arraye3[tam3]
+                tam3 = tam3 - 1
+
+            end    
+        end
+    end        
+        
+  
+  puts soma
+  puts soma2
+  puts soma3
 
 end
 
