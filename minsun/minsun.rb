@@ -12,7 +12,7 @@ varb = 0.to_i
  
 while cont < tamanho do
     
-   break if cont >= tamanho 
+    break if cont >= tamanho 
     
         if arraye[cont] <= arraye[cont + 1]
 
@@ -24,17 +24,25 @@ while cont < tamanho do
 
         end
 
-    #end
+    
     cont = cont +2 
 
 end
 
-#while cont <= tamanho
+soma = 0 
+tamanho = arrayi.length
+cont = 0
 
+while cont < tamanho
 
-#end
+    soma = arrayi[cont] + arrayi[cont + 1] + soma
 
-puts arrayi 
+cont = cont + 2
+
+end
+
+    puts soma 
+
 end
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#**#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 
