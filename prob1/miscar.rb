@@ -9,22 +9,38 @@ tamanho2 = alfabeto.length
 arrayi = []
 
     while cont1 < tamanho do
-     #puts cont1 
-     #puts alfabeto[cont2]
+      
+        while cont2 < tamanho2  
 
-        if arraye.include?(alfabeto[cont2])
-           puts "entrou#{"
-            letra = alfabeto[cont2]
-            alfabeto2 = alfabeto2.delete(letra) 
+            if arraye.include?(alfabeto[cont2]) && cont1 == 0
+           
+                puts "entrou #{cont1}"
+                letra = alfabeto[cont2]
+                alfabeto2 = alfabeto.delete(letra) 
+        
+            elsif arraye.include?(alfabeto[cont2])
+        
+                puts "entrou #{cont1}"
+                letra = alfabeto[cont2] 
+                alfabeto2 = alfabeto2.delete(letra) 
+
+            end
+    
+            cont1 = cont1 + 1
+            cont2 = cont2 + 1
         
         end
 
-        cont1 = cont1 + 1
-        cont2 = cont2 + 1
-    
-    end 
+    end
+if not alfabeto2 nill
 
-puts alfabeto2 
+  puts alfabeto2
+else
+
+    puts "muito bem! você fez um pangram"
+    
+end 
+
 end
 
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
