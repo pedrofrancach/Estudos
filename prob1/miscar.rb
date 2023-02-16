@@ -1,39 +1,37 @@
 #Missing caracter
 
-def missing(arraye)
+def missing(arraye,alfabeto)
 
 tamanho = arraye.length 
 cont1 = 0.to_i 
 cont2 = 0.to_i
-alfabeto = [a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,x,z]
 tamanho2 = alfabeto.length
 arrayi = []
 
-while cont1 < tamanho do
+    while cont1 < tamanho do
 
-    while cont2 < tamanho2 do
-    
-        if not arraye[cont1].include?(alfabeto[cont2]) 
-
-            arrayi << alfabeto[cont2]   
+        if arraye.include?(alfabeto[cont2])
+            
+            letra = alfabeto[cont2]
+            alfabeto2.delete(letra) 
         
         end
-            
+
+        cont1 = cont1 + 1
         cont2 = cont2 + 1
     
-    end
+    end 
 
-cont1 = cont1 + 1
-
+puts alfabeto2 
 end
 
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 
-
+matriz1 = "abcdefghijklmnopqrstuvxyz"
+matriz2 = "abcdefghijklmnopqrstuvxyz"
 
 puts "digite a frase para verificação"
+
 lista = gets
 
-
-
-missing(lista)
+missing(lista,matriz1,matriz2)
