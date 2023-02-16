@@ -9,11 +9,13 @@ tamanho2 = alfabeto.length
 arrayi = []
 
     while cont1 < tamanho do
+     #puts cont1 
+     #puts alfabeto[cont2]
 
         if arraye.include?(alfabeto[cont2])
-            
+           puts "entrou#{"
             letra = alfabeto[cont2]
-            alfabeto2.delete(letra) 
+            alfabeto2 = alfabeto2.delete(letra) 
         
         end
 
@@ -27,11 +29,12 @@ end
 
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 
-matriz1 = "abcdefghijklmnopqrstuvxyz"
-matriz2 = "abcdefghijklmnopqrstuvxyz"
+matriz1 = "abcdefghijklmnopqrstuvxwyz"
+
 
 puts "digite a frase para verificação"
 
 lista = gets
 
-missing(lista,matriz1,matriz2)
+missing(lista,matriz1,)
+
