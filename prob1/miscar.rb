@@ -14,13 +14,13 @@ arrayi = []
 
             if arraye.include?(alfabeto[cont2]) && cont1 == 0
            
-                puts "entrou #{cont1}"
+                puts "entrou1 #{cont1}"
                 letra = alfabeto[cont2]
                 alfabeto2 = alfabeto.delete(letra) 
         
             elsif arraye.include?(alfabeto[cont2])
         
-                puts "entrou #{cont1}"
+                puts "entrou2 #{cont1}"
                 letra = alfabeto[cont2] 
                 alfabeto2 = alfabeto2.delete(letra) 
 
@@ -32,13 +32,15 @@ arrayi = []
         end
 
     end
-if not alfabeto2 nill
 
-  puts alfabeto2
+if alfabeto2 != nil 
+ 
+  puts "ainda faltam usar as letras #{alfabeto2}"
+
 else
 
     puts "muito bem! você fez um pangram"
-    
+
 end 
 
 end
