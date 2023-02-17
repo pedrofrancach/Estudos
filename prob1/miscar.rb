@@ -35,11 +35,11 @@ arrayi = []
 
 if alfabeto2 != nil 
  
-  puts "ainda faltam usar as letras #{alfabeto2}"
+  puts "Ainda faltam usar as letras #{alfabeto2}"
 
 else
 
-    puts "muito bem! você fez um pangram"
+    puts "Muito bem! Você fez um pangram"
 
 end 
 
@@ -47,7 +47,7 @@ end
 
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 
-matriz1 = "abcdefghijklmnopqrstuvxwyz"
+matriz1 = "abcdefgijklmnopqrstuvxwyz"
 
 
 puts "digite a frase para verificação"
