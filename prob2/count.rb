@@ -13,9 +13,7 @@ alfabeto = "qwertyuioplkjhgfdsazmxncbv"
 while cont < tamanho do
     
     while cont2 < 11 do
-puts "numeros é #{numeros[cont2]}"
-puts "arraye é #{arraye[cont]}"
-puts tamanho 
+
         if arraye[cont] == numeros[cont2]
             puts "entrou 2"
             guarda_num = guarda_num + 1
@@ -27,6 +25,7 @@ puts tamanho
     end 
 
     cont = cont + 1
+    cont2 = 0
 
 end
 
