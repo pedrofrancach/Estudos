@@ -8,12 +8,14 @@ cont2 = 0.to_i
 numeros = "0123456789"
 guarda_num = 0
 alfabeto = "qwertyuioplkjhgfdsazmxncbv"
-puts "####################"
-puts arraye
+
+
 while cont < tamanho do
     
     while cont2 < 11 do
-puts "entrou"
+puts "numeros é #{numeros[cont2]}"
+puts "arraye é #{arraye[cont]}"
+puts tamanho 
         if arraye[cont] == numeros[cont2]
             puts "entrou 2"
             guarda_num = guarda_num + 1
