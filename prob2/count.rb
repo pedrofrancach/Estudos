@@ -10,6 +10,7 @@ guarda_num = 0
 guard_let_max = 0
 guard_let_min = 0
 guard_special = 0
+espaco = 0
 alfabeto_min = "qwertyuioplkjhgfdsazmxncbv"
 alfabeto_max = "QWERTYUIOPASDFGHJKLZXCVBNM"
 
@@ -28,6 +29,17 @@ while cont1 < tamanho do
         
         elsif arraye[cont1] == alfabeto_max[cont2]
 
+            guar_let_max = guard_let_max + 1
+            
+        elsif arraye[cont1] == " "
+            
+            espaco = espaco + 1
+
+        else 
+
+            guard_special = guard_special + 1
+
+        end    
          
 
         cont2 = cont2 + 1
@@ -42,7 +54,8 @@ end
 puts "A quantidade de letras maiúsculas é: #{guard_let_max}"
 puts "A quantidade de letras minúsculas é: #{guard_let_min}"
 puts "A quantidade de números é: #{guarda_num}"
-
+puts "A quantidade de caracteres especiais é #{guard_special}"
+puts "A quantidade de espaços é #{espaco}"
 
 end
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
