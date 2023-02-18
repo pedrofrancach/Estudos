@@ -57,6 +57,30 @@ cont1 = 0
 cont2 = 0
 guard_let_max = 0
 
+while cont1 < tamanho do
+
+    while cont2 < 27 do
+    
+        if arraye[cont1] == alfabeto_max[cont2]
+            
+            guard_let_max = guard_let_max + 1
+
+        end
+
+        cont2 = cont2 + 1
+
+    end
+
+    cont1 = cont1 + 1
+    cont2 = 0
+
+end
+
+puts "A quantidade de letras maiúsculas é: #{guard_let_max}"
+puts "A quantidade de letras minúsculas é: #{guard_let_min}"
+puts "A quantidade de números é: #{guarda_num}"
+
+
 end
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 
