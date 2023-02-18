@@ -7,7 +7,8 @@ cont1 = 0.to_i
 cont2 = 0.to_i
 numeros = "0123456789"
 guarda_num = 0
-alfabeto = "qwertyuioplkjhgfdsazmxncbv"
+alfabeto_min = "qwertyuioplkjhgfdsazmxncbv"
+alfabeto_max = "QWERTYUIOPASDFGHJKLZXCVBNM"
 
 
 while cont1 < tamanho do
@@ -34,10 +35,10 @@ cont2 = 0
 guard_let_min = 0
 
 while cont1 < tamanho do
-puts "entrou1"
+
     while cont2 < 27
-    puts "entrou2"
-        if arraye[cont1] == alfabeto[cont2]
+
+        if arraye[cont1] == alfabeto_min[cont2]
             
             guard_let_min = guard_let_min + 1  
 
@@ -49,10 +50,12 @@ puts "entrou1"
 
     cont1 = cont1 + 1
     cont2 = 0
-    
+
 end
 
-puts guard_let_min
+cont1 = 0
+cont2 = 0
+guard_let_max = 0
 
 end
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
