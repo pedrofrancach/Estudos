@@ -55,7 +55,7 @@ puts "A quantidade de letras maiúsculas é: #{guard_let_max}"
 puts "A quantidade de letras minúsculas é: #{guard_let_min}"
 puts "A quantidade de números é: #{guarda_num}"
 puts "A quantidade de caracteres especiais é #{guard_special}"
-puts "A quantidade de espaços é #{espaco}"
+puts "A quantidade de espaços é #{espaco}" 
 
 end
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
