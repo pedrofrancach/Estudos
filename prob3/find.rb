@@ -1,47 +1,39 @@
 #Find Theree
 def findtheree(arraye)
 
-tamanho = arraye.length - 1
+tamanho = arraye.length 
 cont = 0.to_i
-arm1 = []
-arm2 = 0 
-
+primeiro = 0
+segundo = 0 
+terceiro = 0
 
 while cont < tamanho do
-puts "entrou1"
-    if arraye[cont] < arraye[cont + 1]  
-    puts "entrou if"
-        arm1 << arraye[cont + 1]
+
+    if primeiro < arraye[cont]  
+
+        
+         terceiro = segundo
+         segundo = primeiro
+         primeiro = arraye[cont] 
+
+    end
+    if segundo < arraye[cont] && arraye[cont] != primeiro
+    
+        segundo = arraye[cont]
     
     end
+
 
     cont = cont + 1
 
 end
 
-
-tamanho = arm1.length - 1
-cont = 0 
-
-
-while cont < tamanho do
-puts "entrou2"
-    if arm1[cont] < arm1[cont + 1]
-    
-        arm2 << arraye[cont + 1]
-    
-    end 
-
-    cont  = cont + 1
-
-end 
-   
-    puts arm2
+puts primeiro, segundo, terceiro
 
 end
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*##*#*#*#
 
-lista = [10,4,3,50,23,90]
+lista = [10,4,3,50,23,24,90]
 
 findtheree(lista)
 
