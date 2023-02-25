@@ -33,6 +33,9 @@ while cont2 < tamanho do
 
 end
 
+cont = 3
+cont2 = 0
+
 puts "###########"
 puts arraye
 puts "##########"
@@ -40,9 +43,22 @@ puts "##########"
 primeiro = arraye[tamanho]
 segundo = arraye[tamanho - 1]
 terceiro = arraye [tamanho - 2]
+arrayi[0] = primeiro
+arrayi[1] = segundo 
+arrayi[2] = terceiro
 
 
-puts arraye
+while cont < tamanho do
+
+    arrayi[cont] = arraye[cont2]
+
+
+cont = cont + 1
+cont2 = cont2 + 1
+ 
+end
+
+puts arrayi
 
 end
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
