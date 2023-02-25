@@ -11,6 +11,7 @@ terceiro = 0
 
 arm = 0
 
+puts "Assim é a lista(array) original #{arraye}"
 
 while cont2 < tamanho do
 
@@ -33,12 +34,10 @@ while cont2 < tamanho do
 
 end
 
+puts "Assim ela é a lista(array) depois de ordenada #{arraye}"
+
 cont = 3
 cont2 = 0
-
-puts "###########"
-puts arraye
-puts "##########"
 
 primeiro = arraye[tamanho]
 segundo = arraye[tamanho - 1]
@@ -48,7 +47,7 @@ arrayi[1] = segundo
 arrayi[2] = terceiro
 
 
-while cont < tamanho do
+while cont <= tamanho do
 
     arrayi[cont] = arraye[cont2]
 
@@ -58,7 +57,7 @@ cont2 = cont2 + 1
  
 end
 
-puts arrayi
+puts "Assim é a lista(array) depois de processada #{arrayi}"
 
 end
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
