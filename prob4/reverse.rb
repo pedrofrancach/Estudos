@@ -9,8 +9,7 @@ terceiro = 0
 cont = 0
 arm = 0
 
-puts "###########"
-puts arraye[0]
+
 while cont < tamanho do
 
     if arraye[cont] > arraye[cont + 1]
@@ -24,17 +23,6 @@ while cont < tamanho do
 cont = cont + 1
 
 end 
-puts "###########"
-puts arraye[0]
-puts"###########"
-
-#arraye[cont] = arraye[0]
-#arraye[0] = "@"
-
-
-        #arm = arraye[cont + 1]      
-        #arraye[cont + 1] = arraye[cont]
-        #arraye[cont] = arm
 
 puts arraye
 
