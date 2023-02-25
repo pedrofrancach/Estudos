@@ -10,9 +10,9 @@ cont = 0
 arm = 0
 
 while cont < tamanho do
-puts "entrou1"    
+
     if arraye[cont] > arraye[cont + 1]
-    puts "entrou if"
+    
         arm = arraye[cont + 1]      
         arraye[cont + 1] = arraye[cont]
         arraye[cont] = arm
