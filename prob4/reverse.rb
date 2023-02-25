@@ -1,7 +1,7 @@
 # Reversal
 def rev(arraye)
 
-
+arrayi = []
 tamanho = arraye.length - 1
 primeiro = 0
 segundo = 0
@@ -9,6 +9,8 @@ terceiro = 0
 cont = 0
 arm = 0
 
+puts arraye[0]
+puts "###################"
 while cont < tamanho do
 
     if arraye[cont] > arraye[cont + 1]
@@ -21,9 +23,15 @@ while cont < tamanho do
 
 cont = cont + 1
 
-end
+end 
+
+        #arm = arraye[cont + 1]      
+        #arraye[cont + 1] = arraye[cont]
+        #arraye[cont] = arm
 
 puts arraye
+puts "###########"
+puts arraye[0]
 
 end
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
