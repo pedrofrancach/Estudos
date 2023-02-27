@@ -6,16 +6,29 @@ cont = 0
 ano = 0
 mes = 0
 dia = 0
+data = 0
 
-#while cont < tamanho do
+
+while cont < tamanho do
     
-ano = arraye[cont].split('/')
+    data = arraye[cont].split('/')
+    ano = data[2]
+    mes = data[1]
+    dia = data[0] 
 
-#end
+
+
+
+
+    
+    cont = cont + 1
+end
 
 puts ano
 puts "######"
-puts ano[1]    
+puts mes 
+puts "######"
+puts dia    
 
 
 
