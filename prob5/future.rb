@@ -6,8 +6,11 @@ cont = 0
 ano = 0
 mes = 0
 dia = 0
+ano2 = 0
+mes2 = 0
+dia2 = 0
 data = 0
-
+data2 = 0
 
 while cont < tamanho do
     
@@ -16,12 +19,19 @@ while cont < tamanho do
     mes = data[1]
     dia = data[0] 
 
-
-
-
-
+    data2 = arraye[cont + 1].split('/')
+    ano = data2[2]
+    mes = data2[1]
+    dia = data2[0]
     
+
+    if 
+    
+
+
+
     cont = cont + 1
+
 end
 
 puts ano
