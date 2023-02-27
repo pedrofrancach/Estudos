@@ -2,7 +2,8 @@
 def future(arraye,q,c)
 
 tamanho = arraye.length
-cont = 0
+cont1 = 0
+cont2 = 0
 ano = 0
 mes = 0
 dia = 0
@@ -13,16 +14,16 @@ data = 0
 data2 = 0
 arm = 0
 
-while cont < tamanho do
+while cont1 < tamanho do
 
-    while cont < tamanho do 
+    while cont2 < tamanho do 
     
-        data = arraye[cont].split('/')
+        data = arraye[cont2].split('/')
         ano = data[2]
         mes = data[1]
         dia = data[0] 
 
-        data2 = arraye[cont + 1].split('/')
+        data2 = arraye[cont2 + 1].split('/')
         ano = data2[2]
         mes = data2[1]
         dia = data2[0]
@@ -30,14 +31,16 @@ while cont < tamanho do
 
     if ano > ano2
 
-       arm = arraye[cont]
-       arraye[cont] = arraye[cont + 1] 
-       arraye[cont + 1] = arm    
+       arm = arraye[cont2]
+       arraye[cont2] = arraye[cont2 + 1] 
+       arraye[cont2 + 1] = arm    
 
     end
 
-    cont = cont + 1
+    cont2 = cont2 + 1
+    end
 
+    cont1 = cont1 + 1
 end
 
 
