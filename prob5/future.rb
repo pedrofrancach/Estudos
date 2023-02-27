@@ -1,7 +1,7 @@
 #Algoritimo Find Future
 def future(arraye,q,c)
 
-tamanho = arraye.length
+tamanho = arraye.length - 1 
 cont1 = 0
 cont2 = 0
 ano = 0
@@ -15,10 +15,9 @@ data2 = 0
 arm = 0
 
 while cont1 < tamanho do
-    puts "cont1 #{cont1}"
+   
     while cont2 < tamanho do 
         
-        puts "cont2 #{cont2}"
         indice1 = cont2
         indice2 = cont2 + 1
 
@@ -47,7 +46,7 @@ while cont1 < tamanho do
     cont1 = cont1 + 1
 end
 
-
+puts arraye
 end
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 
