@@ -2,8 +2,30 @@
 def future(arraye,q,c)
 
 tamanho = arraye.length
-    
+cont = 0
+ano = 0
+mes = 0
+dia = 0
 
+#while cont < tamanho do
+    
+ano = arraye[cont].split('/')
+
+#end
+
+puts ano
+puts "######"
+puts ano[1]    
+
+
+
+
+
+
+
+
+
+#puts arraye
 
 end
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
