@@ -11,44 +11,35 @@ mes2 = 0
 dia2 = 0
 data = 0
 data2 = 0
+arm = 0
 
 while cont < tamanho do
+
+    while cont < tamanho do 
     
-    data = arraye[cont].split('/')
-    ano = data[2]
-    mes = data[1]
-    dia = data[0] 
+        data = arraye[cont].split('/')
+        ano = data[2]
+        mes = data[1]
+        dia = data[0] 
 
-    data2 = arraye[cont + 1].split('/')
-    ano = data2[2]
-    mes = data2[1]
-    dia = data2[0]
-    
-
-    if 
-    
+        data2 = arraye[cont + 1].split('/')
+        ano = data2[2]
+        mes = data2[1]
+        dia = data2[0]
 
 
+    if ano > ano2
+
+       arm = arraye[cont]
+       arraye[cont] = arraye[cont + 1] 
+       arraye[cont + 1] = arm    
+
+    end
 
     cont = cont + 1
 
 end
 
-puts ano
-puts "######"
-puts mes 
-puts "######"
-puts dia    
-
-
-
-
-
-
-
-
-
-#puts arraye
 
 end
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
