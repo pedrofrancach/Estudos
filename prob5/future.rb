@@ -15,18 +15,22 @@ data2 = 0
 arm = 0
 
 while cont1 < tamanho do
-
+    puts "cont1 #{cont1}"
     while cont2 < tamanho do 
-    
-        data = arraye[cont2].split('/')
+        
+        puts "cont2 #{cont2}"
+        indice1 = cont2
+        indice2 = cont2 + 1
+
+        data = arraye[indice1].split('/')
         ano = data[2]
         mes = data[1]
         dia = data[0] 
 
-        data2 = arraye[cont2 + 1].split('/')
-        ano = data2[2]
-        mes = data2[1]
-        dia = data2[0]
+        data2 = arraye[indice2].split('/')
+        ano2 = data2[2]
+        mes2 = data2[1]
+        dia2 = data2[0]
 
 
     if ano > ano2
