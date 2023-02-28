@@ -18,6 +18,16 @@ while cont1 <= tamanho do
    
     while cont2 < tamanho do 
         
+        ano = 0
+        mes = 0
+        dia = 0
+        ano2 = 0
+        mes2 = 0
+        dia2 = 0
+        data = 0
+        data2 = 0
+        arm = 0
+
       
 
         data = arraye[cont2].split('/')
@@ -59,7 +69,7 @@ end
 
 
 #datas = ["22/4/1233","1/3/633","23/5/56645","4/12/233"]
-datas = ["22/4/1233","1/3/633","4/12/233"]
+datas = ["1/3/633","4/12/233","22/4/1233"]
 #datas = [3,2,4,1]
 q = 2
 query = [23/3/4345,12/3/2]
