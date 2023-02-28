@@ -18,21 +18,26 @@ while cont1 < tamanho do
    
     while cont2 < tamanho do 
         
-        indice1 = cont2
-        indice2 = cont2 + 1
+      
 
-        data = arraye[indice1].split('/')
+        data = arraye[cont2]#.split('/')
         ano = data[2]
         mes = data[1]
         dia = data[0] 
 
-        data2 = arraye[indice2].split('/')
+        data2 = arraye[cont2 + 1]#.split('/')
         ano2 = data2[2]
         mes2 = data2[1]
         dia2 = data2[0]
 
+puts "ano é #{ano}"
+puts "ano é #{ano2}"
+puts "cont1 é #{cont1}"
+puts "cont2 é #{cont2}"
 
     if ano > ano2
+
+puts "entrou"
 
        arm = arraye[cont2]
        arraye[cont2] = arraye[cont2 + 1] 
@@ -41,6 +46,7 @@ while cont1 < tamanho do
     end
 
     cont2 = cont2 + 1
+    puts "#######"
     end
 
     cont1 = cont1 + 1
@@ -51,7 +57,8 @@ end
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 
 
-datas = ["22/4/1233","1/3/633","23/5/56645","4/12/233"]
+#d#atas = ["22/4/1233","1/3/633","23/5/56645","4/12/233"]
+datas = [3,2,4,1]
 q = 2
 query = [23/3/4345,12/3/2]
 
