@@ -14,38 +14,27 @@ data = 0
 data2 = 0
 arm = 0
 
-while cont1 <= tamanho do
+
    
     while cont2 < tamanho do 
-        
-        ano = 0
-        mes = 0
-        dia = 0
-        ano2 = 0
-        mes2 = 0
-        dia2 = 0
-        data = 0
-        data2 = 0
-        arm = 0
-
       
-
+      
         data = arraye[cont2].split('/')
-        ano = data[2]
-        mes = data[1]
-        dia = data[0] 
+        ano = data[2].to_i
+        mes = data[1].to_i
+        dia = data[0].to_i 
 
         data2 = arraye[cont2 + 1].split('/')
-        ano2 = data2[2]
-        mes2 = data2[1]
-        dia2 = data2[0]
+        ano2 = data2[2].to_i
+        mes2 = data2[1].to_i
+        dia2 = data2[0].to_i
 
-puts "ano é #{ano}"
-puts "ano2 é #{ano2}"
-puts "cont1 é #{cont1}"
-puts "cont2 é #{cont2}"
+        puts "ano é #{ano}"
+        puts "ano2 é #{ano2}"
+        puts "cont1 é #{cont1}"
+        puts "cont2 é #{cont2}"
 
-    if ano > ano2
+        if ano > ano2
 
         puts "entrou"
 
@@ -53,15 +42,11 @@ puts "cont2 é #{cont2}"
        arraye[cont2] = arraye[cont2 + 1] 
        arraye[cont2 + 1] = arm    
 
-    end
+        end
 
-    cont2 = cont2 + 1
-    puts "#######"
+        cont2 = cont2 + 1
+        puts "#######"
     end
-
-    cont1 = cont1 + 1
-    cont2 = 0
-end
 
 puts arraye
 end
@@ -69,7 +54,7 @@ end
 
 
 #datas = ["22/4/1233","1/3/633","23/5/56645","4/12/233"]
-datas = ["1/3/633","4/12/233","22/4/1233"]
+datas = ["1/3/633","4/12/233","22/4/1233","23/5/56645"]
 #datas = [3,2,4,1]
 q = 2
 query = [23/3/4345,12/3/2]
