@@ -18,7 +18,6 @@ arm = 0
    
     while cont2 < tamanho do 
       
-      
         data = arraye[cont2].split('/')
         ano = data[2].to_i
         mes = data[1].to_i
@@ -29,23 +28,23 @@ arm = 0
         mes2 = data2[1].to_i
         dia2 = data2[0].to_i
 
-        puts "ano é #{ano}"
-        puts "ano2 é #{ano2}"
-        puts "cont1 é #{cont1}"
-        puts "cont2 é #{cont2}"
-
         if ano > ano2
 
-        puts "entrou"
+            arm = arraye[cont2]
+            arraye[cont2] = arraye[cont2 + 1] 
+            arraye[cont2 + 1] = arm    
 
-       arm = arraye[cont2]
-       arraye[cont2] = arraye[cont2 + 1] 
-       arraye[cont2 + 1] = arm    
+        end
+        
+        puts arraye    
 
+        if mes > mes2
+        
+        
         end
 
         cont2 = cont2 + 1
-        puts "#######"
+    
     end
 
 puts arraye
