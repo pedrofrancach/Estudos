@@ -36,7 +36,7 @@ arm = 0
 
         end
         
-        puts arraye    
+       # puts arraye    
 
         if mes > mes2
         
