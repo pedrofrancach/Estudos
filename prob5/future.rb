@@ -29,25 +29,32 @@ arm = 0
         dia2 = data2[0].to_i
 
         if ano > ano2
-
+ 
             arm = arraye[cont2]
             arraye[cont2] = arraye[cont2 + 1] 
             arraye[cont2 + 1] = arm    
+
+        elsif ano == ano2
+
+            if mes > mes2
+            
+            arm = arraye[cont2]
+            arraye[cont2] = arraye[cont2 + 1] 
+            arraye[cont2 + 1] = arm    
+
+            end
 
         end
         
        # puts arraye    
 
-        if mes > mes2
-        
-        
-        end
+
 
         cont2 = cont2 + 1
     
     end
 
-puts arraye[0]
+puts arraye
 end
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 
