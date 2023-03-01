@@ -38,18 +38,24 @@ arm = 0
 
             if mes > mes2
             
-            arm = arraye[cont2]
-            arraye[cont2] = arraye[cont2 + 1] 
-            arraye[cont2 + 1] = arm    
+                arm = arraye[cont2]
+                arraye[cont2] = arraye[cont2 + 1] 
+                arraye[cont2 + 1] = arm    
+
+            elsif mes == mes2
+
+                if dia > dia2
+
+                    arm = arraye[cont2]
+                    arraye[cont2] = arraye[cont2 + 1] 
+                    arraye[cont2 + 1] = arm    
+                
+                end
 
             end
 
         end
         
-       # puts arraye    
-
-
-
         cont2 = cont2 + 1
     
     end
@@ -60,7 +66,7 @@ end
 
 
 #datas = ["22/4/1233","1/3/633","23/5/56645","4/12/233"]
-datas = ["1/3/633","4/12/233","22/4/1233","23/5/56645"]
+datas = ["1/3/633","4/12/233","22/4/1233","23/5/56645","23/6/56645","18/6/56645"]
 #datas = [3,2,4,1]
 q = 2
 query = [23/3/4345,12/3/2]
