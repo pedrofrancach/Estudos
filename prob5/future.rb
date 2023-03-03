@@ -1,5 +1,5 @@
 #Algoritimo Find Future
-def future(arraye,c,q)
+def future(arraye,consultas,query)
 
 tamanho = arraye.length - 1 
 cont1 = 0
@@ -72,8 +72,14 @@ while cont2 < tamanho do
     mes = data[1].to_i
     dia = data[0].to_i 
 
-    while cont1 < tamanho do
+    while cont1 < query.length  do
     
+        #data2 = query[cont1].split('/')
+        #puts query
+        #puts "##########"
+
+
+        cont1 = cont1 + 1
 
     
     end
@@ -87,7 +93,9 @@ end
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 
 datas = ["1/3/633","4/12/233","22/4/1233","23/5/56645","23/6/56645","18/6/56645"]
-q = 2
-query = [23/3/4345,12/3/2]
+consultas = 2
+query = ["23/3/4345","12/3/2"]
 
-future(datas,q,query)
+puts query
+
+future(datas,consultas,query)
