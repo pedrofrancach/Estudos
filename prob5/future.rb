@@ -71,15 +71,8 @@ while cont2 < tamanho do
     mes = data[1].to_i
     dia = data[0].to_i 
 
-    data2 = arraye[cont2 + 1].split('/')
-    ano2 = data2[2].to_i
-    mes2 = data2[1].to_i
-    dia2 = data2[0].to_i
 
-
-    if 
-
-    end
+    
 end
 
 
