@@ -1,5 +1,5 @@
 #Algoritimo Find Future
-def future(arraye,q,c)
+def future(arraye,c,q)
 
 tamanho = arraye.length - 1 
 cont1 = 0
@@ -66,11 +66,17 @@ cont2 = 0
 
 while cont2 < tamanho do
 
+    
     data = arraye[cont2].split('/')
     ano = data[2].to_i
     mes = data[1].to_i
     dia = data[0].to_i 
 
+    while cont1 < tamanho do
+    
+
+    
+    end
 
     
 end
