@@ -60,6 +60,10 @@ arm = 0
     
     end
 
+# Calcuclo da data mais próxima
+
+
+
 puts arraye
 end
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
