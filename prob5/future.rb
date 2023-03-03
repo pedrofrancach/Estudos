@@ -77,7 +77,7 @@ while cont2 < tamanho do
     dia2 = data2[0].to_i
 
 
-    if data < c[cont2]
+    if 
 
     end
 end
