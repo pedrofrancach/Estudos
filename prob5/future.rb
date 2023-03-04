@@ -78,12 +78,15 @@ while cont2 < tamanho do
         #puts query
         #puts "##########"
 
+puts query
+puts "#######################"
 
         cont1 = cont1 + 1
 
     
     end
 
+    cont2 = cont2 + 1
     
 end
 
@@ -95,7 +98,5 @@ end
 datas = ["1/3/633","4/12/233","22/4/1233","23/5/56645","23/6/56645","18/6/56645"]
 consultas = 2
 query = ["23/3/4345","12/3/2"]
-
-puts query
 
 future(datas,consultas,query)
