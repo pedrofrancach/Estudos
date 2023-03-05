@@ -78,7 +78,8 @@ while cont1 < tamanho do
          ano2 = data2[2].to_i
          mes2 = data[1].to_i
          dia2 = data[0].to_i
-                cont2 = cont2 + 1
+        
+         cont2 = cont2 + 1
 
     
     end
