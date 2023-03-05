@@ -61,7 +61,9 @@ arm = 0
     end
 
 # Calcuclo da data mais próxima
+cont1 = 0
 cont2 = 0 
+
 
 
 while cont2 < tamanho do
@@ -72,14 +74,12 @@ while cont2 < tamanho do
     mes = data[1].to_i
     dia = data[0].to_i 
 
-    while cont1 < query.length  do
+    while cont1 == query.length  do
     
-        #data2 = query[cont1].split('/')
-        #puts query
-        #puts "##########"
+         data2 = query[cont1].split('/')
+         puts data2
+         puts "##########"
 
-puts query
-puts "#######################"
 
         cont1 = cont1 + 1
 
