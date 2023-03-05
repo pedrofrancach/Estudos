@@ -65,29 +65,27 @@ cont1 = 0
 cont2 = 0 
 
 
+while cont1 < tamanho do
 
-while cont2 < tamanho do
-
-    
-    data = arraye[cont2].split('/')
+    data = arraye[cont1].split('/')
     ano = data[2].to_i
     mes = data[1].to_i
     dia = data[0].to_i 
 
-    while cont1 == query.length  do
+    while cont2 == query.length  do
     
-         data2 = query[cont1].split('/')
+         data2 = query[cont2].split('/')
          puts data2
          puts "##########"
 
 
-        cont1 = cont1 + 1
+        cont2 = cont2 + 1
 
     
     end
 
-    cont2 = cont2 + 1
-    
+    cont1 = cont1 + 1
+    cont2 = 0    
 end
 
 
