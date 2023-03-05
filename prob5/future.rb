@@ -75,11 +75,10 @@ while cont1 < tamanho do
     while cont2 == query.length  do
     
          data2 = query[cont2].split('/')
-         puts data2
-         puts "##########"
-
-
-        cont2 = cont2 + 1
+         ano2 = data2[2].to_i
+         mes2 = data[1].to_i
+         dia2 = data[0].to_i
+                cont2 = cont2 + 1
 
     
     end
