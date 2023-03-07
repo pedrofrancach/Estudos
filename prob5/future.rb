@@ -13,7 +13,7 @@ dia2 = 0
 data = 0
 data2 = 0
 arm = 0
-
+arrayi = []
 
    
     while cont2 < tamanho do 
