@@ -84,7 +84,7 @@ while cont1 < tamanho do
         
         if ano2 < ano
         
-           
+        arrayi << data2   
         
         end
 
@@ -96,7 +96,7 @@ while cont1 < tamanho do
 end
 
 
-puts arraye
+puts arrayi
 end
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 
