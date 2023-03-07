@@ -72,7 +72,7 @@ while cont1 < tamanho do
     mes = data[1].to_i
     dia = data[0].to_i 
 
-    while cont2 == query.length  do
+    while cont2 <= consultas do
     
          data2 = query[cont2].split('/')
          ano2 = data2[2].to_i
@@ -81,11 +81,18 @@ while cont1 < tamanho do
         
          cont2 = cont2 + 1
 
-    
+        
+        if ano2 < ano
+        
+           
+        
+        end
+
     end
 
     cont1 = cont1 + 1
     cont2 = 0    
+
 end
 
 
