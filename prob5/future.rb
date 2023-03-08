@@ -89,6 +89,9 @@ while cont1 < tamanho do
         elsif mes < me2
 
 
+        elsif dia < dia2            
+
+
 
 
         end
