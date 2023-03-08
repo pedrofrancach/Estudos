@@ -96,7 +96,8 @@ while cont1 < tamanho do
 end
 
 
-puts arrayi
+puts arrayi, arraye, cont1, cont2
+
 end
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 
