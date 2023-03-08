@@ -90,8 +90,12 @@ while cont1 < tamanho do
 
 
         elsif dia < dia2            
-
-
+ 
+    
+        else
+        
+           
+        end
 
 
         end
