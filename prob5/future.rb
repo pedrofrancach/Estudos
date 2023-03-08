@@ -86,6 +86,11 @@ while cont1 < tamanho do
         
         arrayi << query[cont2]  
         
+        elsif mes < me2
+
+
+
+
         end
 
     end
