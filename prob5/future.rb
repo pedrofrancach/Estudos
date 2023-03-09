@@ -13,7 +13,7 @@ dia2 = 0
 data = 0
 data2 = 0
 arm = 0
-arrayi = []
+
 
    
     while cont2 < tamanho do 
@@ -63,7 +63,7 @@ arrayi = []
 # Calcuclo da data mais próxima
 cont1 = 0
 cont2 = 0 
-
+arrayi = []
 
 while cont1 < tamanho do
 
@@ -84,6 +84,9 @@ while cont1 < tamanho do
         
         if ano2 < ano
         
+            arrayi.clear
+            
+            arrayi << ano2
                      
         
         elsif mes < me2
