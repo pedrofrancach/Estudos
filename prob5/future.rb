@@ -94,6 +94,7 @@ while cont1 < tamanho do
     
         else
         
+            puts "-1"
            
         end
 
