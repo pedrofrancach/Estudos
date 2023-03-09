@@ -84,7 +84,7 @@ while cont1 < tamanho do
         
         if ano2 < ano
         
-        arrayi << query[cont2]  
+                     
         
         elsif mes < me2
 
