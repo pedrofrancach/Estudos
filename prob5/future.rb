@@ -86,7 +86,7 @@ while cont1 < tamanho do
         
             arrayi << data2
                      
-        elsif mes < me2
+        elsif mes < mes2
 
 
         elsif dia < dia2            
