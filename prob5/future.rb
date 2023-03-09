@@ -84,11 +84,8 @@ while cont1 < tamanho do
         
         if ano2 < ano
         
-            arrayi.clear
-            
-            arrayi << ano2
+            arrayi << data2
                      
-        
         elsif mes < me2
 
 
