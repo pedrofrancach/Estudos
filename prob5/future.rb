@@ -82,7 +82,7 @@ while cont1 < tamanho do
         
          cont2 = cont2 + 1
 
-        
+        #Ano verifica
         if ano2 < ano
         
             arrayi << data2
