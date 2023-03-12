@@ -64,35 +64,38 @@ arm = 0
 cont1 = 0
 cont2 = 0 
 arrayi = []
+erro = 0.to_i
+tamanho = arraye.length
+
 
 while cont1 < consultas do
 
-    data = query[cont2].split('/') 
+    data = query[cont1].split('/') 
     ano = data[2].to_i
     mes = data[1].to_i
     dia = data[0].to_i 
 
     while cont2 < tamanho do
-    
-        #Trocar ou inverter
-         data2 = arraye[cont1].split('/')
+         
+         puts arraye[cont2]
+         data2 = arraye[cont2].split('/')
          ano2 = data2[2].to_i
          mes2 = data[1].to_i
          dia2 = data[0].to_i
-        
-         cont2 = cont2 + 1
-
-        #Ano verifica
+                       
         if ano < ano2
-                                         
-            arrayi << data        
+             puts "A data2 é #{data2}"              
+            arrayi << data2        
                   
         else
-              erro = erro + 1
-            puts erro
+         
+            erro = erro + 1
+            #puts erro
            
         end
 
+       cont2 = cont2 + 1
+    
     end
 
     cont1 = cont1 + 1
@@ -101,7 +104,7 @@ while cont1 < consultas do
 end
 
 
-puts arrayi, arraye, cont1, cont2
+puts arrayi
 
 end
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
