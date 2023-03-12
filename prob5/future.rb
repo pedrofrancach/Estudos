@@ -74,24 +74,42 @@ while cont1 < consultas do
     ano = data[2].to_i
     mes = data[1].to_i
     dia = data[0].to_i 
-
+    cont3 = 0
     while cont2 < tamanho do
          
-         puts arraye[cont2]
          data2 = arraye[cont2].split('/')
          ano2 = data2[2].to_i
          mes2 = data[1].to_i
          dia2 = data[0].to_i
                        
         if ano < ano2
-             puts "A data2 é #{data2}"              
-            arrayi << data2        
-                  
+         
+            if arrayi == nil
+            
+                arrayi << arraye[cont2]        
+            
+            else
+            
+                num = arrayi.length
+                
+                while cont3 <= num
+                
+                    if not arraye[cont2] == arrayi[cont3]
+                    
+                        arrayi << arraye[cont2]
+                    
+                    end
+                    
+                    cont3 = cont3 + 1
+                    
+                end
+
+            end
+            
         else
          
             erro = erro + 1
-            #puts erro
-           
+                      
         end
 
        cont2 = cont2 + 1
