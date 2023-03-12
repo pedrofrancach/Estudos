@@ -65,14 +65,14 @@ cont1 = 0
 cont2 = 0 
 arrayi = []
 
-while cont1 < tamanho do
+while cont1 < consultas do
 
     data = query[cont2].split('/') 
     ano = data[2].to_i
     mes = data[1].to_i
     dia = data[0].to_i 
 
-    while cont2 < consultas do
+    while cont2 < tamanho do
     
         #Trocar ou inverter
          data2 = arraye[cont1].split('/')
@@ -83,23 +83,14 @@ while cont1 < tamanho do
          cont2 = cont2 + 1
 
         #Ano verifica
-        if ano2 < ano
-        
-            arrayi << data2
-                     
-        elsif mes < mes2
-
-
-        elsif dia < dia2            
- 
-    
+        if ano < ano2
+                                         
+            arrayi << data        
+                  
         else
-        
-            puts "-1"
+              erro = erro + 1
+            puts erro
            
-        end
-
-
         end
 
     end
