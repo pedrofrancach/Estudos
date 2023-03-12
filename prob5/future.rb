@@ -75,7 +75,8 @@ while cont1 < tamanho do
     while cont2 < consultas do
     
         #Trocar ou inverter
-         data2 = query[cont2].split('/')
+         data2 = query[cont2].split('/') arraye[cont1].split('/')
+    
          ano2 = data2[2].to_i
          mes2 = data[1].to_i
          dia2 = data[0].to_i
