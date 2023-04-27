@@ -12,12 +12,13 @@ arrayi = []
 =begin
 
     while cont1 < tamanho do
-      
-        
+              
         while cont2 < tamanho2  
-             puts "entrou #{cont2}"
-             puts "entrou #{cont1}"
-            if arraye.include?(alfabeto[cont2]) && cont1 == 0
+      
+            puts "entrou #{cont2}"
+            puts "entrou #{cont1}"
+      
+             if arraye.include?(alfabeto[cont2]) && cont1 == 0
            
                 letra = alfabeto[cont2]
                 alfabeto2 = alfabeto2.delete(letra) 
