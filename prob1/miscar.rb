@@ -28,8 +28,7 @@ arrayi = []
                 alfabeto2 = alfabeto2.delete!(letra) 
 
             end
-    
-           
+               
             cont2 = cont2 + 1
         
         end
