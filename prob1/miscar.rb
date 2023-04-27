@@ -39,6 +39,8 @@ arrayi = []
 
 alfabeto2 = alfabeto2.delete!(arraye)
 
+
+
 if alfabeto2 != nil 
  
   puts "Ainda faltam usar as letras #{alfabeto2}"
@@ -55,10 +57,13 @@ end
 
 matriz1 = "abcdefghijklmnopqrstuvwxyz"
 
+lista = " "
 
+while lista.length < 5 do
 puts "digite a frase para verificação"
 
 lista = gets.downcase
 
+end
 missing(lista,matriz1,)
 
