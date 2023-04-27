@@ -8,11 +8,14 @@ cont2 = 0.to_i
 tamanho2 = alfabeto.length
 arrayi = []
 
+
+
     while cont1 < tamanho do
       
+        
         while cont2 < tamanho2  
 
-            if arraye.include?(alfabeto[cont2]) && cont1 == 0
+            if arraye.include?(alfabeto[cont2]) && cont1 == 0 #&& alfabeto[cont2] != " "
            
                 puts "entrou1 #{cont1}"
                 letra = alfabeto[cont2]
@@ -52,7 +55,7 @@ matriz1 = "abcdefgijklmnopqrstuvxwyz"
 
 puts "digite a frase para verificação"
 
-lista = gets
+lista = gets.downcase
 
 missing(lista,matriz1,)
 
