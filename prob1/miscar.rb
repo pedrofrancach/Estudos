@@ -32,8 +32,11 @@ arrayi = []
             cont2 = cont2 + 1
         
         end
+
         cont1 = cont1 + 1
+    
     end
+
 =end
 
 alfabeto2 = alfabeto2.delete!(arraye)
