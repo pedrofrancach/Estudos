@@ -6,6 +6,7 @@ tamanho = arraye.length
 cont1 = 0.to_i 
 cont2 = 0.to_i
 tamanho2 = alfabeto.length
+alfabeto2 = alfabeto
 arrayi = []
 
 
@@ -14,18 +15,20 @@ arrayi = []
       
         
         while cont2 < tamanho2  
-
+               puts "entrou 0 #{cont2}"
+               
             if arraye.include?(alfabeto[cont2]) && cont1 == 0 #&& alfabeto[cont2] != " "
            
                 puts "entrou1 #{cont1}"
                 letra = alfabeto[cont2]
-                alfabeto2 = alfabeto.delete(letra) 
+                alfabeto2 = alfabeto2.delete(letra) 
         
             elsif arraye.include?(alfabeto[cont2])
         
                 puts "entrou2 #{cont1}"
                 letra = alfabeto[cont2] 
-                alfabeto2 = alfabeto2.delete(letra) 
+                puts alfabeto2
+                alfabeto2 = alfabeto2.delete!(letra) 
 
             end
     
