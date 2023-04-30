@@ -7,20 +7,21 @@ arraye.delete!(" ")
 tamanho = arraye.length - 1
 cont1 = 0.to_i
 cont2 = 0.to_i
-numeros = "0123456789"
-guarda_num = 0
+guard_num = 0
 guard_let_max = 0
 guard_let_min = 0
 guard_special = 0
 espaco = 0
 alfabeto_min = "qwertyuioplkjhgfdsazmxncbv"
 alfabeto_max = "QWERTYUIOPASDFGHJKLZXCVBNM"
+numeros = "0123456789"
 
 
 guard_let_max = arraye.count(alfabeto_max)
 
 guard_let_min = arraye.count(alfabeto_min)  
 
+guard_num = arraye.count(numeros)
 
 #-----------------------------------------#substituido
 =begin
@@ -66,7 +67,7 @@ while cont1 < tamanho do
 
 puts "A quantidade de letras maiúsculas é: #{guard_let_max}"
 puts "A quantidade de letras minúsculas é: #{guard_let_min}"
-#puts "A quantidade de números é: #{guarda_num}"
+puts "A quantidade de números é: #{guard_num}"
 #puts "A quantidade de caracteres especiais é #{guard_special}"
 #puts "A quantidade de espaços é #{espaco}" 
 
