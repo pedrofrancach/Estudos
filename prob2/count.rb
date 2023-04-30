@@ -2,7 +2,6 @@
 
 def count(arraye)
     
-#arraye.delete!(" ")
 
 tamanho = arraye.length - 1
 guard_num = 0
