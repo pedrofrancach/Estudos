@@ -14,7 +14,7 @@ espaco = 0
 alfabeto_min = "qwertyuioplkjhgfdsazmxncbv"
 alfabeto_max = "QWERTYUIOPASDFGHJKLZXCVBNM"
 
-
+=begin
 while cont1 < tamanho do
     
     while cont2 < 11 do
@@ -31,7 +31,7 @@ while cont1 < tamanho do
 
             guar_let_max = guard_let_max + 1
             
-        elsif arraye[cont1] == " "
+        elsif arraye[cont1] == " " 
             
             espaco = espaco + 1
 
@@ -50,7 +50,7 @@ while cont1 < tamanho do
     cont2 = 0
     
 end
-
+=end
 puts "A quantidade de letras maiúsculas é: #{guard_let_max}"
 puts "A quantidade de letras minúsculas é: #{guard_let_min}"
 puts "A quantidade de números é: #{guarda_num}"
