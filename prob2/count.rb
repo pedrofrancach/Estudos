@@ -2,7 +2,9 @@
 
 def count(arraye)
     
-tamanho = arraye.length
+arraye.delete!(" ")
+
+tamanho = arraye.length - 1
 cont1 = 0.to_i
 cont2 = 0.to_i
 numeros = "0123456789"
@@ -14,6 +16,13 @@ espaco = 0
 alfabeto_min = "qwertyuioplkjhgfdsazmxncbv"
 alfabeto_max = "QWERTYUIOPASDFGHJKLZXCVBNM"
 
+
+guard_let_max = arraye.count(alfabeto_max)
+
+  
+
+
+#-----------------------------------------#substituido
 =begin
 while cont1 < tamanho do
     
@@ -49,13 +58,18 @@ while cont1 < tamanho do
     cont1 = cont1 + 1
     cont2 = 0
     
-end
 =end
+
+#-------------------------------------------------# Substituido
+
+
+
 puts "A quantidade de letras maiúsculas é: #{guard_let_max}"
-puts "A quantidade de letras minúsculas é: #{guard_let_min}"
-puts "A quantidade de números é: #{guarda_num}"
-puts "A quantidade de caracteres especiais é #{guard_special}"
-puts "A quantidade de espaços é #{espaco}" 
+#puts "A quantidade de letras minúsculas é: #{guard_let_min}"
+#puts "A quantidade de números é: #{guarda_num}"
+#puts "A quantidade de caracteres especiais é #{guard_special}"
+#puts "A quantidade de espaços é #{espaco}" 
+
 
 end
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
