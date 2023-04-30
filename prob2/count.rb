@@ -19,7 +19,7 @@ alfabeto_max = "QWERTYUIOPASDFGHJKLZXCVBNM"
 
 guard_let_max = arraye.count(alfabeto_max)
 
-  
+guard_let_min = arraye.count(alfabeto_min)  
 
 
 #-----------------------------------------#substituido
@@ -65,7 +65,7 @@ while cont1 < tamanho do
 
 
 puts "A quantidade de letras maiúsculas é: #{guard_let_max}"
-#puts "A quantidade de letras minúsculas é: #{guard_let_min}"
+puts "A quantidade de letras minúsculas é: #{guard_let_min}"
 #puts "A quantidade de números é: #{guarda_num}"
 #puts "A quantidade de caracteres especiais é #{guard_special}"
 #puts "A quantidade de espaços é #{espaco}" 
