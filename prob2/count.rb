@@ -2,7 +2,7 @@
 
 def count(arraye)
     
-arraye.delete!(" ")
+#arraye.delete!(" ")
 
 tamanho = arraye.length - 1
 cont1 = 0.to_i
@@ -11,7 +11,8 @@ guard_num = 0
 guard_let_max = 0
 guard_let_min = 0
 guard_special = 0
-espaco = 0
+guar_esp = 0
+espaço = " "
 alfabeto_min = "qwertyuioplkjhgfdsazmxncbv"
 alfabeto_max = "QWERTYUIOPASDFGHJKLZXCVBNM"
 numeros = "0123456789"
@@ -22,6 +23,10 @@ guard_let_max = arraye.count(alfabeto_max)
 guard_let_min = arraye.count(alfabeto_min)  
 
 guard_num = arraye.count(numeros)
+
+guard_esp = arraye.count(espaço)
+
+#guard_esp = tamanho - guard_let_max - guard_let_min - guard_num
 
 #-----------------------------------------#substituido
 =begin
@@ -69,7 +74,8 @@ puts "A quantidade de letras maiúsculas é: #{guard_let_max}"
 puts "A quantidade de letras minúsculas é: #{guard_let_min}"
 puts "A quantidade de números é: #{guard_num}"
 #puts "A quantidade de caracteres especiais é #{guard_special}"
-#puts "A quantidade de espaços é #{espaco}" 
+puts "A quantidade de espaços é #{guard_esp}" 
+puts "O tamanhoda array é #{tamanho}"
 
 
 end
