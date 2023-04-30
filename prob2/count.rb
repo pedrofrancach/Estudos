@@ -25,6 +25,7 @@ guard_num = arraye.count(numeros)
 guard_esp = arraye.count(espaço)
 
 guard_special = tamanho - guard_let_max - guard_let_min - guard_num - guard_esp
+
 #-----------------------------------------#substituido
 =begin
 while cont1 < tamanho do
@@ -72,13 +73,15 @@ puts "A quantidade de letras minúsculas é: #{guard_let_min}"
 puts "A quantidade de números é: #{guard_num}"
 puts "A quantidade de caracteres especiais é #{guard_special}"
 puts "A quantidade de espaços é #{guard_esp}" 
-puts "O tamanhoda array é #{tamanho}"
+puts "O tamanho da array é #{tamanho}"
 
 
 end
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 
 puts " digite a frase para verificação..."
+puts "."
+puts "."
 puts "ATENÇÃO! Letras com acento são consideradas caracteres especiais"
 lista = gets
 
