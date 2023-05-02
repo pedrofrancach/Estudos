@@ -19,17 +19,21 @@ mesi = datainicial[1]
 diai = datainicial[0]
 
 
-datafinal = dataa.split("/")
+datafinal = Time.now.strftime("%d/%m/%Y").split("/")
 anof = datafinal[2]
 mesf = datafinal[1]
 diaf = datafinal[0]
 
-calcano = anof.to_i - anoi.to_i
+calcano = anof.to_i - anoi.to_i - 1
 calcmes = mesf.to_i - mesi.to_i
 calcdia = diaf.to_i - diai.to_i 
 
 
-puts "A idade é de #{calcano} anos, #{calcmes.abs} meses e #{calcdia} dias"
+puts datafinal
+puts "."
+puts "."
+puts "."
+puts "A idade é de #{calcano.abs} anos, #{calcmes.abs} meses e #{calcdia.abs} dias"
 
 
 
@@ -41,8 +45,8 @@ puts "Digite o data de nascimento"
 
 datan = gets
 
-puts "Digite a data de calculo"
+#puts "Digite a data de calculo"
 
-dataa = gets
+dataa = 0
 
 calcid(datan, dataa)
