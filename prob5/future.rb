@@ -78,25 +78,30 @@ while cont1 < consultas do
     dia = data[0].to_i 
     cont3 = 0
 
+puts "A query agora é #{query[cont1]}  "
+
     while cont2 < tamanho do
-         puts "etrou 0"
+         
          data2 = arraye[cont2].split('/')
          ano2 = data2[2].to_i
          mes2 = data[1].to_i
          dia2 = data[0].to_i
-                       
-        if ano < ano2
          
+         puts "A data é #{data}"
+         puts "A data2 é #{data2}"
+         puts "O cont1 é #{cont1}"
+         if ano <= ano2
+         puts "entrou 1"
             if arrayi == nil
             
                 arrayi << arraye[cont2]        
             
             else
-            
+            puts "entrou 2"
                 num = arrayi.length
                 
                 while cont3 <= num
-                puts "entrou 1"
+                puts "entrou 3"
                     if not arraye[cont2] == arrayi[cont3]
                     
                         arrayi << arraye[cont2]
@@ -134,6 +139,5 @@ datas = ["1/3/633","4/12/233","22/4/1233","23/5/56645","23/6/56645","18/6/56645"
 consultas = 2
 query = ["23/3/56645","12/3/56646"]
 
-puts "iniciou"
 
 future(datas,consultas,query)
