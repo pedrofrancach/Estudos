@@ -36,7 +36,7 @@ end
 
 puts "Assim ela é a lista(array) depois de ordenada #{arraye}"
 
-cont = 3
+cont = giros.to_i
 cont2 = 0
 
 primeiro = arraye[tamanho]
