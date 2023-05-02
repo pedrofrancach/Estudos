@@ -1,5 +1,5 @@
 # Reversal
-def rev(arraye)
+def rev(giros,arraye)
 
 arrayi = []
 tamanho = arraye.length - 1
@@ -65,6 +65,8 @@ end
 
 lista = [10,9,8,45,7,6,5,69,4,18,3,2,1]
 #lista = [1,2,3,4,5,6,7,8,9,10]
+puts "defina o número de giros que deverá ser feita na matriz"
+giros = gets
 
-rev(lista)
+rev(giros,lista)
 
