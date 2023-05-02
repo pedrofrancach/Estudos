@@ -78,7 +78,7 @@ while cont1 < consultas do
     dia = data[0].to_i 
     cont3 = 0
 
-puts "A query agora é #{query[cont1]}  "
+#puts "A query agora é #{query[cont1]}  "
 
     while cont2 < tamanho do
          
@@ -87,21 +87,21 @@ puts "A query agora é #{query[cont1]}  "
          mes2 = data[1].to_i
          dia2 = data[0].to_i
          
-         puts "A data é #{data}"
-         puts "A data2 é #{data2}"
-         puts "O cont1 é #{cont1}"
+        # puts "A data é #{data}"
+         #puts "A data2 é #{data2}"
+         #puts "O cont1 é #{cont1}"
          if ano <= ano2
-         puts "entrou 1"
+         #puts "entrou 1"
             if arrayi == nil
             
                 arrayi << arraye[cont2]        
             
             else
-            puts "entrou 2"
+          #  puts "entrou 2"
                 num = arrayi.length
                 
                 while cont3 <= num
-                puts "entrou 3"
+           #     puts "entrou 3"
                     if not arraye[cont2] == arrayi[cont3]
                     
                         arrayi << arraye[cont2]
@@ -113,7 +113,7 @@ puts "A query agora é #{query[cont1]}  "
                 end
 
             end
-            
+             
         else
          
             erro = erro + 1
@@ -129,7 +129,7 @@ puts "A query agora é #{query[cont1]}  "
 
 end
 
-puts "chegou até aqui"
+#puts "chegou até aqui"
 puts arrayi
 
 end
